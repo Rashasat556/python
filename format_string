@@ -1,0 +1,29 @@
+#------------------
+# string formatting
+# موقع خاص بال  format
+# https://pyformat.info/ 
+
+#-------------ء-----
+a="one "
+b=  1 
+#print('alpah :'+a+'number'+b)  type error
+print("alpha : %s and number : %.2f " %(a,b))
+
+#truncate string
+print(' alpah :  %.2s' %a)
+
+# An easier way to do this formating 
+print(' alpah :  {}'.format(a))
+print("alpha :{} and number : {} ".format(a,b))
+print("alpha :{:.2s} and number : {:.3f} ".format(a,b)) # floating  point
+# format myMney
+myMoney = 3563635637
+print(" my mony in bank is {}".format(myMoney))
+print(" my mony in bank is {:,d}".format(myMoney)) # just use , wen you use . it's wrong
+# rearrange item 
+print('{1} {0}'.format(a,b))
+print('{1:.4f} {0:.2s}'.format(a,b))
+#  format in version 3.6+
+print(" alpah is : {a} and  number is {b}")# when run wrong write 
+print(f" alpah is : {a} and  number is {b}") # that true
+
