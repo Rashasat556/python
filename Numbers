@@ -1,0 +1,33 @@
+#++++++++++++++++++++
+#   numbers
+#++++++++++++++++++++
+#complex 
+myNumber = 6+7j
+print( " number is : {}".format(myNumber.imag))
+print( " number is : {}".format(myNumber.real))
+n = 5
+print(float(n))
+print(complex(n))
+#print(float(myNumber)) = error we can't convert   complex to (float&int) or any type
+
+#---------------------------------
+#   arthmetic operators 
+#----------------------------------
+
+# additon
+print( 50+44)
+#subtraction
+print( 44-55)
+print( -44- -55) #not wrong
+#multiplication
+print( -55*+54)
+print( (5 *4)*5)
+#division
+print( int(55/9))
+#modulus
+print(4%3)
+#exponent
+print(2**4) # الاس
+# floor division
+print(100//20)
+
