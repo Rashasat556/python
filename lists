@@ -1,0 +1,61 @@
+#------------------------------
+#   ---- lists ----
+#---------------------------
+myList=[' one','tow',1,True,9,66]
+
+print(type(myList[1])) # string the type is not list
+print(myList[-2])
+print(myList[1:2])
+print(myList[2:])
+print(myList[::2])
+myList[-1]=False
+myList[:3]=[4,6] # انا هنا نغير فالعناصر ولو كان عددهم مختلف  نشيل الموجود ونحط الجديد
+print(myList)
+
+#-------------------------------
+#           lists  method
+#--------------------------------
+
+#append()
+myfriends=['asma','roa','rasha']
+myfriends.append('rafif')
+print(myfriends)
+n=[44,55]
+myfriends.append(n)# يلي انضاف انضاف كانه عنصر واحده
+print(myfriends)
+print(myfriends[4][1])# نوصل للعناصر الداخليه
+# extend() لو نبيه يضيف الكل كعناصر يضيفها 
+
+a=[4,6,4]
+b=['hh','tt']
+a.extend(b)
+print(a)
+#remove
+a.remove(4) # انضيف القيمه يلي يبي يمسحها 
+print(a)
+#sort يرتب اما ارفام او حروف
+y=[1,5,7,3,4]
+y.sort()# اتوماتك ترتيب تصاعدي
+
+print(y)
+y.sort(reverse=False) # false = تنازلي  true = تصاعدي
+#reverse يعكس بس ال list 
+y.reverse()
+print(y)
+#clear
+y.clear()
+print(y)
+#copy
+v=a.copy() #  نسخه مستقله
+a.append(4)
+print(v)
+print(a)
+#count
+print(a.count(4)) # يدور كم مره لقاه
+#index
+print(a.index(4)) # يدور على اول مكان بيقبله
+# insert
+a.insert(0,9) #  يضيف منغير ميلغي فالمكان يلي قبله يضيف
+print(a)
+#pop نعطيه مكان ويرحع شن القيمه الموجوده فيه
+print(a.pop(3))
