@@ -1,0 +1,53 @@
+#------------------------------
+#        ---- tuple ----
+#------------------------------
+
+myTuple1=('a','b','c')
+myTuple2='a','b','c' # same thing
+print(type(myTuple1))
+print(type(myTuple2)) # same type
+# type indexing
+
+print(myTuple1[0])
+#myTuple1[2]='b' # error 'tuple' object does not support item assignment 
+#Tupleلا يمكن التعديل على ال == becous is immutable 
+u=4,'tt',3,'tt',True
+print(u) 
+# operators used in strinh and lists available in tuples 
+
+#-----------------------
+#   ----methods----  
+#-----------------------
+# tuple with one element 
+
+myTuple3='ali'
+print(type(myTuple3)) # = string
+myTuple3='ali',
+print(type(myTuple3)) # = tuple
+print(len(myTuple3)) # = 1 element
+
+#---------------------------
+
+myTuple3= myTuple1+myTuple2
+print(myTuple3)
+myTuple3= myTuple1+('a',4)+myTuple2
+
+# tuple , list,string (*)
+a='m'
+b=[4,5]
+c=4,3
+print(a*6)
+print(b*6)
+print(c*6)
+
+#  _____________ methods __________
+
+#count
+#index
+
+# tuple destruct
+a=1,2,3
+x,z,c=a
+# لو درت x,y=a في قيمه زايده وحيطلع ايرور فالحل
+x,_,c=a
+print(x,c)
