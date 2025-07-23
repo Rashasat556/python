@@ -1,0 +1,99 @@
+#------------------------------
+#        ---- set ----
+#------------------------------
+
+# not ordered and not indexed
+mySet={'a','b','c'} 
+print(mySet)# not ordered 
+#print(mySet[0]) == error is not indexed
+#slicing cant be done
+#print(mySet[0:2]) == error
+#mySet={3,'o',33,[3,4,3]}
+#print(mySet) # unhashable type: 
+# 'list'تحويل البيانات إلى قيمة رقمية ثابتة الطول 
+# (تُسمى hash value أو hash code)، باستخدام دالة رياضية.
+#hash("apple")  # بيعطيك رقم طويل زي: 6954011090994559235
+#يعني ما يتغير بعد ما تنشئه
+mySet={3,'o',33,(3,4,3)}
+print(mySet) # hashable type ==  int, str, tuple ✅ and == list, dict, set ❌
+
+# items is unique   تلغي التكرار
+
+mySet={3,3,'a','a'}
+print(mySet)
+
+
+#-----------------------
+#   ----methods----  
+#-----------------------
+
+#clear()
+#union
+s={4,3,2}
+
+print(s | mySet) 
+# =
+print(s.union(mySet))
+p={4,3,2,5}
+print(s | p | mySet) # same
+#add
+# #s.add(4,3) =  Error: set.add() takes exactly -- one argument --
+s.add(4)
+print(s)
+
+#copy
+#remove
+#s.remove(22) # حطلع ايرور لو ملقتش المكان 
+#didcard
+s.discard(22)#  مش حطلع ايرور لو ملقتش المكان 
+
+#pop()  اطلع عشوائي 
+
+print(s.pop())
+
+# ******update()******* نقدر انضيف list *************
+
+s.update([4,5,6]) #  التكرار مش حيحسبه 
+print(s)
+ 
+#difference() يلي موجود فالاول ومش موجود فالتانيات
+print(s.difference(p))
+
+#same = 
+print(s-p)
+#difference_update() زيدي افهمي الفرق 
+s.difference_update(p)
+print(s)
+#intersection() العناصر المشتركه
+s={3,4,'o',5}
+p={4,5,7,'o'}
+print(s.intersection(p) ) # = s & p
+#intersection_update ()   _update  لعاديه و method ا وال شوفي الفرق بين ا ل
+print(s.intersection_update(p)) 
+# symmetric_difference  يلي مش موجوده فالاتنين  وحده فيها والتانيه لا    
+print(s.symmetric_difference(p)) # s ^ p
+#symmetric_difference_update()
+s.symmetric_difference_update(p)
+print(s)
+
+#--------------------------------------------------------------------
+
+#أولاً: symmetric_difference()
+#🔹 ترجع مجموعة جديدة فيها العناصر التي لا تتكرر في المجموعتين (يعني العناصر اللي في وحدة ومش في الثانية).
+#🔹 ما تعدلش المجموعة الأصلية.
+
+#ثانيًا: symmetric_difference_update()
+#🔹 نفس النتيجة تقريبًا، لكن تحدث المجموعة الأصلية نفسها.
+# methodsوهكذا قيسيها على بافي  
+
+#--------------------------------------------------------------------
+
+#issuperset 
+s={1,2,3,4}
+p={1,2,3}
+print(s.issuperset(p)) # s موجوده ف p  هل كل العناصر الموجوده ف 
+#issubset() 
+print(s.issubset(p)) # p موجوده ف s  هل كل العناصر الموجوده ف 
+
+#isdisjoint() هل منفصلين عن بعض
+print(s.isdisjoint(p))
