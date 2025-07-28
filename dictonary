@@ -1,0 +1,78 @@
+#----------------------------------
+#  ------dictionary----------
+#------------------------------------
+
+user = {
+
+'r':'rasha', 
+'w' : ' teer',
+'g':'erd',
+5:'999',
+# key  ->  (list) متكونش   :  valu -> اتكون اي نوع من انواع البيانات
+#[4,5,7]:'sfs'=  error
+'sfs' : [6,4,7,3]
+
+}
+#print(user)
+# not ordered you acces its element with key  الوصول يكون  بالاسم
+print(user['r'])
+# or
+print(user.get('r'))
+
+
+print(user.keys())
+print( user.values() )
+
+#tow dimensiomal dixtionary
+la={
+'eng':{
+'1': 'one',
+'2':'tow',
+'3':'three',
+},
+'sb': {
+'1': 'one',
+'2': ' tt',
+},
+'s': {
+'1': 'one',
+'2': ' tt',
+   }
+}
+print(la)
+print(la['s']['1'])
+# dictonary length
+print(len(la))
+print(len(la['s']))
+
+k={
+'l':'rrr',
+'m':'rtwgd',
+}
+
+la={
+'eng':{
+'1': 'one',
+'2':'tow',
+'3':'three',
+},
+'sb': {
+'1': 'one',
+'2': ' tt',
+},
+# dictionary  نقدر ندمج 
+'s': k
+}
+print(la)
+
+# --------------- methods -----------------
+#stedfault
+user.clear()
+print(user)
+
+#update
+user.update({'c':6})
+#or
+user['y']=99
+print(user)
+#copy
