@@ -1,0 +1,22 @@
+#------------------------------
+#---- assignments operators ---
+#------------------------------
+# +=
+# -=
+# **=
+# //=
+a = 7
+b = 2
+#a**=b
+#a//=b
+a/=b
+print(a)
+#------------------------------
+#---- comparison operators ---
+#------------------------------
+#== equal
+#!= not equal
+# > grater then
+# < less then
+# >= grater then or equel 
+# >= less then or equel 
