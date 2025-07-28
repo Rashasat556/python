@@ -1,0 +1,8 @@
+#------------------------------
+#    ---- user input ---
+#------------------------------
+a= input (' wats your name  : ')
+b=input (' wats your last name  : ')
+
+print(' the name is : {}  the last name is {:.1}'.format(a.strip().capitalize(),b.strip().capitalize()))
+
