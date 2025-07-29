@@ -1,0 +1,9 @@
+#----------------------------------
+#  Practical - Email Slice
+#------------------------------------
+yourname=input(' enter your name : ').capitalize().strip()
+yourEmail=input(' enter your email : ').capitalize().strip()
+print(f' your name is : {yourname}  and tha email is : {yourEmail}')
+a=yourEmail[:yourEmail.index('@')]
+b=yourEmail[yourEmail.index('@')+1:]
+print(f'youreEmail  is : {a}  \nand your websit is {b}')
