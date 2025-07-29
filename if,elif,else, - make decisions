@@ -1,0 +1,20 @@
+#- ----------------------------------
+# --------if,elif,else -------------
+# -------- make decisions ---------
+#- ----------------------------------
+
+n="rasha"
+c="pthon course"
+m= 100
+c="libya"
+if c=="USK":
+ print(f'hellow {n} , tha course \"{c}\" ')
+ print(f'price is : ${m-30} , becuse you from \"{c}\"')
+elif c== "libya" :
+ print(f'hellow {n} , tha course \"{c}\" ')
+ print(f'price is : ${m-80} , becuse you from \"{c}\"')
+
+else :
+  
+ print(f'hellow {n} ')
+ print(f'price is : ${m} ')
