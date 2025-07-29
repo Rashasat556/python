@@ -1,0 +1,19 @@
+#----------------------------------
+#      Your Age Full Details
+#------------------------------------
+
+yorAge=int(input('wath\'s your age :').strip() )
+print(int(yorAge))
+
+
+mon = yorAge * 12           # عدد الأشهر
+day = yorAge * 365          # عدد الأيام (نفترض كل سنة 365 يوم)
+ho = day * 24               # عدد الساعات
+m = ho * 60                 # عدد الدقائق
+s = m * 60                  # عدد الثواني
+
+print(f"monthas :  {mon:,}")
+print(f"day:{day:,}".strip())
+print(f"hours: {ho:,}")
+print(f"minutes: {m:,}")
+print(f"scant: {s:,}")
