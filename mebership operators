@@ -1,0 +1,19 @@
+#------------------------------
+# ---  mebership operators  ---
+#------------------------------
+# in
+nam='rasha'
+print('a' in nam , 'l' in nam , 'R' in nam) # حساسه لحاله الاحرف
+#list
+a=['ali','basma','cammer','doola']
+print('ali' in a)
+print('rasha' not in a)
+print('ali' not in a)
+
+#usinh in and not in with cindition
+c=['ly','us','it','fr']
+
+x=input(" enter yor cuntery : ").capitalize().lower()
+if x in c : print(f' hello you have a discount equal to $40')
+else : print(f' soory you dont have any equal')
+
