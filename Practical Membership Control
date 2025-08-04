@@ -1,0 +1,33 @@
+#------------------------------
+#  Practical Membership Control 
+#------------------------------
+nam = ['ali', 'asma', 'rasha']
+x = input('Please type your name: ')
+
+if x in nam:
+    print(f"Hello {x}, welcome.")
+    p = input('Do you want to  1 : delete or  2 : update your name? ').strip().lower()
+    
+    if p == '2':
+        n2 = input("Enter your new name: ")
+        m = nam.index(x)
+        nam[m] = n2
+        print('Name updated.')
+
+    elif p == '1':
+        nam.remove(x)
+        print('Name deleted.')
+        print(nam)
+else: print("Name not found.")
+i=input( "add  you ? \n yes --> whrit 1 \n no  --> whrit 1  "'\n chose :')
+if i == '1' :
+  nam.append(x)
+  print('you are  added .')
+  print(nam)
+  
+elif i == '2':
+       
+        print('you are not added .')
+      
+
+
