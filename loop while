@@ -1,0 +1,35 @@
+#------------------------------
+#  Practical Membership Control 
+#------------------------------
+
+p = [3,4,5,6,7,8,8,9,7,5,9,44]
+a=0
+while a < len(p):
+    print( str(a+1).zfill(2),':',p[a])
+    a+=1
+
+  
+#------------------------------
+#  loop = > while training 
+# simple booknark manage
+#------------------------------
+
+#------------------------------
+#  loop = > while training 
+# simple posswros guess
+#------------------------------
+
+a = 5
+ps="rashasati2005"
+i=0
+o=input(' enter tha pusswerd : ') 
+while i<a :
+ 
+  i+=1
+  if o == ps :
+    print(' tha paswerd is threu , welcom :)')
+  
+  elif i<=a :  print('soure tha paswerd is  not thrue you can  whrite   agan  ',i)
+  o=input(' enter tha pusswerd : ') 
+  #break
+else : print("soory tha paswerd is not threu :( ")
