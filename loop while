@@ -14,6 +14,26 @@ while a < len(p):
 # simple booknark manage
 #------------------------------
 
+myFav=[]
+siwep = 5 
+while  siwep > 0 :
+ web = input(' websites name wuthout https : // ')
+ myFav.append( f'https // : {web}')
+ siwep-=1
+ print(f'website added , {siwep}')
+ print(myFav)
+else : 
+  print("is full")
+
+if len(myFav)>0:
+  myFav.sort()
+  print(myFav)
+  ind=0
+  while ind<len(myFav) :
+    print(myFav[ind])
+    ind+=1
+
+
 #------------------------------
 #  loop = > while training 
 # simple posswros guess
